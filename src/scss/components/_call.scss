@@ -1,0 +1,69 @@
+.call-center {
+  margin-top: 110px;
+
+  &__title {
+    color: #000;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 43px;
+    margin-bottom: 17px;
+    @include responsive(mobile) {
+      font-size: 24px;
+    }
+    @include responsive(sm-mobile) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__statistics {
+    background-color: $white;
+    display: flex;
+    gap: 10px;
+    @include responsive(tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__statistic {
+    padding: 30px 10px;
+    @include responsive(tablet) {
+      width: calc((100% - 2 * 10px) / 3);
+      text-align: center;
+    }
+    @include responsive(mobile) {
+      width: calc((100% - 10px) / 2);
+    }
+    @include responsive(sm-mobile) {
+      width: 100%;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #5f6ac0;
+    &:not(:last-child) {
+      border-right: 1px solid #5f6ac0;
+      @include responsive(tablet) {
+        border: none;
+      }
+    }
+
+    h3 {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      @include responsive(sm-mobile) {
+        font-size: 35px;
+      }
+    }
+
+    sub {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}

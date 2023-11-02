@@ -1,0 +1,30 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  @include responsive(sm-desktop) {
+    width: 1000px;
+  }
+
+  @include responsive(tablet) {
+    width: 940px;
+  }
+
+  @include responsive(sm-tablet) {
+    width: 90%;
+  }
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.show {
+  display: block !important;
+}

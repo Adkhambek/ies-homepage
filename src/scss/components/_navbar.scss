@@ -1,0 +1,19 @@
+.navbar {
+  padding-top: 20px;
+  background-color: $white;
+  @include responsive(sm-tablet) {
+    display: none;
+  }
+  &__list {
+    @include flex(center, space-between);
+    @include responsive(tablet) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  }
+
+  .contact {
+    font-weight: 700;
+  }
+}

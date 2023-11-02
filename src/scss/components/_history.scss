@@ -1,0 +1,102 @@
+.history {
+  padding-top: 38px;
+  background-color: $white;
+  color: #171849;
+
+  .container {
+    position: relative;
+  }
+
+  &__context {
+    display: flex;
+    align-items: center;
+    @include responsive(mobile) {
+      flex-direction: column;
+      width: 100%;
+    }
+    @include responsive(sm-mobile) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 43px;
+    text-transform: uppercase;
+    width: 50%;
+    @include responsive(sm-tablet) {
+      font-size: 30px;
+    }
+    @include responsive(mobile) {
+      font-size: 24px;
+      width: 100%;
+    }
+    @include responsive(sm-mobile) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__detail {
+    border-left: 1px solid $orange;
+    padding-left: 40px;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+    @include responsive(sm-tablet) {
+      font-size: 16px;
+    }
+    @include responsive(mobile) {
+      padding-left: 0;
+      border: none;
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+
+  &__year {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url("../images/banners/banner-1.jpg");
+    background-size: contain;
+    color: transparent;
+    font-size: 500px;
+    text-align: center;
+    font-weight: bold;
+    height: 450px;
+    overflow: hidden;
+    filter: grayscale(100%);
+    @include responsive(sm-desktop) {
+      font-size: 400px;
+      height: auto;
+    }
+    @include responsive(sm-tablet) {
+      font-size: 300px;
+    }
+
+    @include responsive(mobile) {
+      font-size: 180px;
+    }
+
+    @include responsive(sm-mobile) {
+      font-size: 100px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    background-color: #171849;
+    color: $white;
+    text-align: center;
+    @include responsive(sm-desktop) {
+      position: static;
+    }
+  }
+}

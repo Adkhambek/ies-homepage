@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <a href="/" class="header__brand">
+          <img src="./images/logo.svg" alt="Logo" class="header__logo" />
+          <h1 class="header__logo-title">
+            Акционерное обшество Тепловые электро станции
+          </h1>
+        </a>
+        <button
+          class="header__burger-btn"
+          id="burgerBtn"
+          aria-label="burger-btn"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="header__right">
+          <button class="header__accessibility-tool">
+            <img
+              src="./images/icons/glasses.svg"
+              class="mr-10"
+              alt="Accessibility Tool icon"
+            />
+            <span>Для слабовидящих</span>
+          </button>
+          <div class="dropdown" id="dropdown">
+            <button class="dropdown__btn">
+              <span>Русский</span>
+              <img
+                src="./images/icons/arrow-down.svg"
+                alt="arrow down"
+                class="dropdown__icon"
+              />
+            </button>
+            <ul class="dropdown__menu" id="dropdownMenu">
+              <li class="dropdown__menu-item dropdown__menu-item--hover">
+                English
+              </li>
+              <li class="dropdown__menu-item dropdown__menu-item--hover">
+                O'zbekcha
+              </li>
+            </ul>
+          </div>
+          <a href="tel:+99871 230 1273" class="header__phone-link">
+            <img src="./images/icons/telephone-call.svg" alt="Telephone icon" />
+            <div class="header__phone">
+              <span class="phone-title">Helpline</span>
+              <span class="phone-number">+99871 230 1273</span>
+            </div>
+          </a>
+          <ul class="social">
+            <li class="social__item">
+              <a href="#">
+                <img src="./images/social/twitter.svg" alt="Twitter icon" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <img src=./images/social/facebook.svg alt="Facebook icon" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <img src="./images/social/instagram.svg" alt="Instagram icon" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <img src="./images/social/telegram.svg" alt="Telegram icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar__list" id="navbarDropdown">
+          <li class="navbar__item dropdown">
+            <button class="dropdown__btn">
+              <span>О компании</span>
+              <img
+                src="./images/icons/arrow-down.svg"
+                class="dropdown__icon--navbar"
+                alt="arrow down"
+              />
+            </button>
+            <ul class="dropdown__menu dropdown__menu--navbar" id="dropdownMenu">
+              <li class="dropdown__menu-item">АО ТЭС сегодня</li>
+              <li class="dropdown__menu-item">Стратегия развития</li>
+              <li class="dropdown__menu-item">Трансформация</li>
+              <li class="dropdown__menu-item">Миссия</li>
+              <li class="dropdown__menu-item">Ценности</li>
+              <li class="dropdown__menu-item">Структура компании</li>
+              <li class="dropdown__menu-item">Подведомственные организации</li>
+              <li class="dropdown__menu-item">Вакансии</li>
+              <li class="dropdown__menu-item">Контакты</li>
+            </ul>
+          </li>
+          <li class="navbar__item dropdown">
+            <button class="dropdown__btn">
+              <span>Деятельность</span>
+              <img
+                src="./images/icons/arrow-down.svg"
+                class="dropdown__icon--navbar"
+                alt="arrow down"
+              />
+            </button>
+            <ul class="dropdown__menu dropdown__menu--navbar" id="dropdownMenu">
+              <li class="dropdown__menu-item">АО ТЭС сегодня</li>
+              <li class="dropdown__menu-item">Стратегия развития</li>
+              <li class="dropdown__menu-item">Трансформация</li>
+              <li class="dropdown__menu-item">Миссия</li>
+              <li class="dropdown__menu-item">Ценности</li>
+              <li class="dropdown__menu-item">Структура компании</li>
+              <li class="dropdown__menu-item">Подведомственные организации</li>
+              <li class="dropdown__menu-item">Вакансии</li>
+              <li class="dropdown__menu-item">Контакты</li>
+            </ul>
+          </li>
+          <li class="navbar__item dropdown">
+            <button class="dropdown__btn">
+              <span>Инвестиционная политика</span>
+              <img
+                src="./images/icons/arrow-down.svg"
+                class="dropdown__icon--navbar"
+                alt="arrow down"
+              />
+            </button>
+            <ul class="dropdown__menu dropdown__menu--navbar" id="dropdownMenu">
+              <li class="dropdown__menu-item">АО ТЭС сегодня</li>
+              <li class="dropdown__menu-item">Стратегия развития</li>
+              <li class="dropdown__menu-item">Трансформация</li>
+              <li class="dropdown__menu-item">Миссия</li>
+              <li class="dropdown__menu-item">Ценности</li>
+              <li class="dropdown__menu-item">Структура компании</li>
+              <li class="dropdown__menu-item">Подведомственные организации</li>
+              <li class="dropdown__menu-item">Вакансии</li>
+              <li class="dropdown__menu-item">Контакты</li>
+            </ul>
+          </li>
+          <li class="navbar__item dropdown">
+            <button class="dropdown__btn">
+              <span>Корпоративное управления</span>
+              <img
+                src="./images/icons/arrow-down.svg"
+                class="dropdown__icon--navbar"
+                alt="arrow down"
+              />
+            </button>
+            <ul class="dropdown__menu dropdown__menu--navbar" id="dropdownMenu">
+              <li class="dropdown__menu-item">АО ТЭС сегодня</li>
+              <li class="dropdown__menu-item">Стратегия развития</li>
+              <li class="dropdown__menu-item">Трансформация</li>
+              <li class="dropdown__menu-item">Миссия</li>
+              <li class="dropdown__menu-item">Ценности</li>
+              <li class="dropdown__menu-item">Структура компании</li>
+              <li class="dropdown__menu-item">Подведомственные организации</li>
+              <li class="dropdown__menu-item">Вакансии</li>
+              <li class="dropdown__menu-item">Контакты</li>
+            </ul>
+          </li>
+          <li class="navbar__item dropdown">
+            <button class="dropdown__btn">
+              <span>Пресс служба</span>
+              <img
+                src="./images/icons/arrow-down.svg"
+                class="dropdown__icon--navbar"
+                alt="arrow down"
+              />
+            </button>
+            <ul class="dropdown__menu dropdown__menu--navbar" id="dropdownMenu">
+              <li class="dropdown__menu-item">АО ТЭС сегодня</li>
+              <li class="dropdown__menu-item">Стратегия развития</li>
+              <li class="dropdown__menu-item">Трансформация</li>
+              <li class="dropdown__menu-item">Миссия</li>
+              <li class="dropdown__menu-item">Ценности</li>
+              <li class="dropdown__menu-item">Структура компании</li>
+              <li class="dropdown__menu-item">Подведомственные организации</li>
+              <li class="dropdown__menu-item">Вакансии</li>
+              <li class="dropdown__menu-item">Контакты</li>
+            </ul>
+          </li>
+          <li class="navbar__item--contact contact">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="swiper banner__swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#">
+                <h2 class="banner__title">
+                  Надежное, бесперебойное энергоснабжение потребителей страны
+                </h2>
+              </a>
+              <img
+                class="banner__image"
+                src="./images/banners/banner-1.jpg"
+                alt="banner"
+              />
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <h2 class="banner__title">
+                  Надежное, бесперебойное энергоснабжение потребителей страны
+                </h2>
+              </a>
+
+              <img
+                class="banner__image"
+                src="./images/banners/banner-2.jpg"
+                alt="banner"
+              />
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <h2 class="banner__title">
+                  Надежное, бесперебойное энергоснабжение потребителей страны
+                </h2>
+              </a>
+              <img
+                class="banner__image"
+                src="./images/banners/banner-3.jpg"
+                alt="banner"
+              />
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <h2 class="banner__title">
+                  Надежное, бесперебойное энергоснабжение потребителей страны
+                </h2>
+              </a>
+              <img
+                class="banner__image"
+                src="./images/banners/banner-4.jpg"
+                alt="banner"
+              />
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <button
+          class="swiper-slide-btn swiper-button-next"
+          aria-label="next button"
+        >
+          <span class="fas fa-chevron-right"></span>
+        </button>
+        <button
+          class="swiper-slide-btn swiper-button-prev"
+          aria-label="prev button"
+        >
+          <span class="fas fa-chevron-left"></span>
+        </button>
+      </div>
+    </section>
+    <!-- Feature -->
+    <section class="feature">
+      <div class="container">
+        <h2 class="visually-hidden">Feature section</h2>
+        <ul class="feature__list">
+          <li class="feature__item">
+            <img
+              src="./images/features/feature-1.png"
+              alt="feature"
+              class="feature__image"
+            />
+            <p class="feature__name">Внимание короновирус</p>
+          </li>
+          <li class="feature__item">
+            <img
+              src="./images/features/feature-2.png"
+              alt="feature"
+              class="feature__image"
+            />
+            <p class="feature__name">Противодействие коррупции</p>
+          </li>
+          <li class="feature__item">
+            <img
+              src="./images/features/feature-3.png"
+              alt="feature"
+              class="feature__image"
+            />
+            <p class="feature__name">Инвестиционные проекты</p>
+          </li>
+          <li class="feature__item">
+            <img
+              src="./images/features/feature-4.png"
+              alt="feature"
+              class="feature__image"
+            />
+            <p class="feature__name">Раскрытие информации</p>
+          </li>
+          <li class="feature__item">
+            <img
+              src="./images/features/feature-5.png"
+              alt="feature"
+              class="feature__image"
+            />
+            <p class="feature__name">Тендеры и торги</p>
+          </li>
+          <li class="feature__item">
+            <img
+              src="./images/features/feature-6.png"
+              alt="feature"
+              class="feature__image"
+            />
+            <p class="feature__name">Документы</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Information -->
+    <section class="information">
+      <div class="container">
+        <header class="information__header">
+          <h2 class="information__title">пресс-центр</h2>
+          <div class="information__header-right">
+            <button
+              data-type="news"
+              class="information__btn information__btn--active"
+            >
+              Новости и пресс релизы
+            </button>
+            <button data-type="video" class="information__btn">
+              Видео материалы
+            </button>
+            <button data-type="graphics" class="information__btn">
+              Инфографики
+            </button>
+          </div>
+        </header>
+        <ul class="information__list">
+          <li
+            data-type="news"
+            class="information__item information__news active"
+          >
+            <ul class="news-list">
+              <li class="news-item">
+                <div class="information__date">
+                  <span class="day">11</span>
+                  <div class="month-year">
+                    <span class="month">Июнь</span>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+                <img
+                  src="./images/info/info-1.jpg"
+                  alt="news image"
+                  class="information__news-image"
+                />
+                <p class="information__detail information__detail-with-bg">
+                  Для представителей сми, журналистов и блогеров проведен
+                  пресс-тур по талимарджанской тэс
+                </p>
+              </li>
+              <li class="news-item">
+                <div class="information__date">
+                  <span class="day">11</span>
+                  <div class="month-year">
+                    <span class="month">Июнь</span>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+                <p class="information__detail">
+                  Для представителей сми, журналистов и блогеров проведен
+                  пресс-тур по талимарджанской тэс
+                </p>
+              </li>
+              <li class="news-item">
+                <div class="information__date">
+                  <span class="day">11</span>
+                  <div class="month-year">
+                    <span class="month">Июнь</span>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+                <p class="information__detail">
+                  Для представителей сми, журналистов и блогеров проведен
+                  пресс-тур по талимарджанской тэс
+                </p>
+              </li>
+              <li class="news-item">
+                <div class="information__date">
+                  <span class="day">11</span>
+                  <div class="month-year">
+                    <span class="month">Июнь</span>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+                <p class="information__detail">
+                  Для представителей сми, журналистов и блогеров проведен
+                  пресс-тур по талимарджанской тэс
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li data-type="video" class="information__item information__videos">
+            <ul class="video-list">
+              <li class="video-item">
+                <div class="information__date">
+                  <span class="day">11</span>
+                  <div class="month-year">
+                    <span class="month">Июнь</span>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+                <img
+                  src="./images/info/info-2.jpg"
+                  alt="news image"
+                  class="information__news-image"
+                />
+                <button type="button" class="information__video-play">
+                  <img src="./images/icons/play.png" alt="play icon" />
+                </button>
+                <p class="information__detail">
+                  Для представителей сми, журналистов и блогеров проведен
+                  пресс-тур по талимарджанской тэс
+                </p>
+              </li>
+              <li class="video-item">
+                <div class="information__date">
+                  <span class="day">11</span>
+                  <div class="month-year">
+                    <span class="month">Июнь</span>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+                <img
+                  src="./images/info/info-3.jpg"
+                  alt="news image"
+                  class="information__news-image"
+                />
+                <p class="information__detail">
+                  Для представителей сми, журналистов и блогеров проведен
+                  пресс-тур по талимарджанской тэс
+                </p>
+              </li>
+              <li class="video-item">
+                <div class="information__date">
+                  <span class="day">11</span>
+                  <div class="month-year">
+                    <span class="month">Июнь</span>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+                <img
+                  src="./images/info/info-1.jpg"
+                  alt="news image"
+                  class="information__news-image"
+                />
+                <p class="information__detail">
+                  Для представителей сми, журналистов и блогеров проведен
+                  пресс-тур по талимарджанской тэс
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li
+            data-type="graphics"
+            class="information__item information__graphics"
+          >
+            <ul class="graphics-list">
+              <li class="graphics-item">
+                <div class="information__date">
+                  <span class="day">11</span>
+                  <div class="month-year">
+                    <span class="month">Июнь</span>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+                <img
+                  src="./images/info/info-4.jpg"
+                  alt="news image"
+                  class="information__news-image"
+                />
+                <p class="information__detail">
+                  Для представителей сми, журналистов и блогеров проведен
+                  пресс-тур по талимарджанской тэс
+                </p>
+              </li>
+              <li class="graphics-item">
+                <div class="information__date">
+                  <span class="day">11</span>
+                  <div class="month-year">
+                    <span class="month">Июнь</span>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+                <img
+                  src="./images/info/info-5.jpg"
+                  alt="news image"
+                  class="information__news-image"
+                />
+                <p class="information__detail">
+                  Для представителей сми, журналистов и блогеров проведен
+                  пресс-тур по талимарджанской тэс
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Indicator -->
+    <section class="indicator">
+      <div class="container">
+        <h2 class="visually-hidden">Main indicators</h2>
+        <ul class="indicator__list">
+          <li class="indicator__item">
+            <div class="indicator__context">
+              <p class="indicator__top-text">Основные покозатели</p>
+              <p class="indicator__stat">882<span>МВт</span></p>
+              <p class="indicator__detail">
+                Установленной электрической мощности
+              </p>
+            </div>
+            <img
+              src="./images/indicators/indicator-1.png"
+              alt="indicator icon"
+              class="indicator__icon"
+            />
+          </li>
+          <li class="indicator__item">
+            <div class="indicator__context">
+              <p class="indicator__top-text">Основные покозатели</p>
+              <p class="indicator__stat">4352436<span>тыс. кВт*ч</span></p>
+              <p class="indicator__detail">
+                Выработка электрической энергии в 2020 году
+              </p>
+            </div>
+            <img
+              src="./images/indicators/indicator-2.png"
+              alt="indicator icon"
+              class="indicator__icon"
+            />
+          </li>
+          <li class="indicator__item">
+            <div class="indicator__context">
+              <p class="indicator__top-text">Основные покозатели</p>
+              <p class="indicator__stat">1882<span>Гкал/ч</span></p>
+              <p class="indicator__detail">Установленная тепловая мощность</p>
+            </div>
+            <img
+              src="./images/indicators/indicator-3.png"
+              alt="indicator icon"
+              class="indicator__icon"
+            />
+          </li>
+          <li class="indicator__item">
+            <div class="indicator__context">
+              <p class="indicator__top-text">Основные покозатели</p>
+              <p class="indicator__stat">134882<span>Гкал/ч</span></p>
+              <p class="indicator__detail">Отпуск теплоэнергии в 2020 году</p>
+            </div>
+            <img
+              src="./images/indicators/indicator-4.png"
+              alt="indicator icon"
+              class="indicator__icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Reception -->
+    <section class="reception">
+      <div class="container">
+        <div class="reception__box">
+          <h2 class="reception__title">
+            Остались вопросы или хотите обращатся руководству AO ТЭС?
+          </h2>
+          <p class="reception__sub-title">
+            Напишите ваше вопрос или обрашение прямо сейчас
+          </p>
+          <a href="#" class="reception__link">Электронная приемная</a>
+        </div>
+      </div>
+    </section>
+    <!-- History -->
+    <section class="history">
+      <div class="container">
+        <div class="history__context">
+          <h2 class="history__title">
+            история и развитие электро энерготической системы Узбекистана
+          </h2>
+          <p class="history__detail">
+            В 2021 году энергетическая система отмечает 90 лет со дня своего
+            создания. Сегодня белорусская энергетика – это важнейшая, базовая,
+            высокотехнологичная отрасль народного хозяйства, которая
+            обеспечивает эффективную деятельность всех остальных отраслей и
+            субъектов экономики
+          </p>
+        </div>
+        <div class="history__bg-img"></div>
+        <h3 class="history__year">1924</h3>
+        <a href="#" class="history__link">Прочитать историю ТЭС</a>
+      </div>
+    </section>
+    <!-- Station -->
+    <section class="station">
+      <div class="container">
+        <h2 class="station__title">
+          состав Акционерное обшество Тепловые электро станции
+        </h2>
+        <img class="station__map" src="./images/map.svg" alt="Uzbekistan map" />
+      </div>
+    </section>
+    <!-- Statistics -->
+    <section class="statistics">
+      <div class="container">
+        <h2 class="visually-hidden">statistics</h2>
+        <div class="swiper statistics__swiper">
+          <ul class="swiper-wrapper statistics__list">
+            <li class="swiper-slide statistics__item">
+              <p class="statistics__number">11<sub>ШТ</sub></p>
+              <p class="statistics__description">
+                Общее количество тепловых электростанций
+              </p>
+              <img
+                src="./images/statistics/image-1.png"
+                alt="statistics image"
+                class="statistics__image"
+              />
+            </li>
+            <li class="swiper-slide statistics__item">
+              <p class="statistics__number">8<sub>ШТ</sub></p>
+              <p class="statistics__description">
+                Тепловые электрические станции
+              </p>
+              <img
+                src="./images/statistics/image-2.png"
+                alt="statistics image"
+                class="statistics__image"
+              />
+            </li>
+            <li class="swiper-slide statistics__item">
+              <p class="statistics__number">3<sub>ШТ</sub></p>
+              <p class="statistics__description">Теплоэлектроцентрали</p>
+              <img
+                src="./images/statistics/image-3.png"
+                alt="statistics image"
+                class="statistics__image"
+              />
+            </li>
+            <li class="swiper-slide statistics__item">
+              <p class="statistics__number">38.9<sub>млр кв.ч</sub></p>
+              <p class="statistics__description">Потреблении электроэнергии</p>
+              <img
+                src="./images/statistics/image-4.png"
+                alt="statistics image"
+                class="statistics__image"
+              />
+            </li>
+            <li class="swiper-slide statistics__item">
+              <p class="statistics__number">38.9<sub>млр кв.ч</sub></p>
+              <p class="statistics__description">Потреблении электроэнергии</p>
+              <img
+                src="./images/statistics/image-4.png"
+                alt="statistics image"
+                class="statistics__image"
+              />
+            </li>
+            <li class="swiper-slide statistics__item">
+              <p class="statistics__number">38.9<sub>млр кв.ч</sub></p>
+              <p class="statistics__description">Потреблении электроэнергии</p>
+              <img
+                src="./images/statistics/image-4.png"
+                alt="statistics image"
+                class="statistics__image"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="statistics__navigation-btns">
+          <button class="statistics__prev-btn">
+            <img src="./images/icons/arrow-left.png" alt="prev icon" />
+          </button>
+          <button class="statistics__next-btn">
+            <img src="./images/icons/arrow-right.png" alt="next icon" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Call center -->
+    <section class="call-center">
+      <div class="container">
+        <h2 class="call-center__title">Статистика по Call центру</h2>
+        <ul class="call-center__statistics">
+          <li class="call-center__statistic">
+            <div class="call-center__content">
+              <h3>560</h3>
+              <p>Звонкоков в Call Центр</p>
+            </div>
+          </li>
+          <li class="call-center__statistic">
+            <div class="call-center__content">
+              <h3>190<sub>из них</sub></h3>
+              <p>поставили 5 баллов</p>
+            </div>
+          </li>
+          <li class="call-center__statistic">
+            <div class="call-center__content">
+              <h3>290<sub>из них</sub></h3>
+              <p>поставили 4 баллов</p>
+            </div>
+          </li>
+          <li class="call-center__statistic">
+            <div class="call-center__content">
+              <h3>90<sub>из них</sub></h3>
+              <p>поставили 3 баллов</p>
+            </div>
+          </li>
+          <li class="call-center__statistic">
+            <div class="call-center__content">
+              <h3>10<sub>из них</sub></h3>
+              <p>поставили 2 баллов</p>
+            </div>
+          </li>
+          <li class="call-center__statistic">
+            <div class="call-center__content"></div>
+            <h3>10<sub>из них</sub></h3>
+            <p>поставили 1 баллов</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <h2 class="footer__nav-name">o компании</h2>
+              <ul class="footer__nav-links">
+                <li class="footer__nav-link">
+                  <a href="#">AO ТЭС сегодня</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Стратегия развития</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Трансформация</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Миссия</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Ценности</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Структура компании</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Подведомственные организации</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Вакансии</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__nav-item">
+              <h2 class="footer__nav-name">Деятельность</h2>
+              <ul class="footer__nav-links">
+                <li class="footer__nav-link">
+                  <a href="#">Производственные показатели</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Локализация и кооперация</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Охрана окружающей среды</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Молодежная политика</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Статистика обращений</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__nav-item">
+              <h2 class="footer__nav-name">Пресс служба</h2>
+              <ul class="footer__nav-links">
+                <li class="footer__nav-link">
+                  <a href="#">Новости</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Объявления</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Пресс-секретарь</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Функции пресс-службы</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Порядок запроса информации</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Видеогалерея</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Фотогалерея</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Связаться c нами</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__nav-item">
+              <h2 class="footer__nav-name">инвестиционная политика</h2>
+              <ul class="footer__nav-links">
+                <li class="footer__nav-link">
+                  <a href="#">Международные отношения</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Инвестпроекты и работы по модернизации</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__nav-item">
+              <h2 class="footer__nav-name">Корпоративная управления</h2>
+              <ul class="footer__nav-links">
+                <li class="footer__nav-link">
+                  <a href="#">Акционер</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Органы внутреннего контроля</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Открытые данные</a>
+                </li>
+                <li class="footer__nav-link">
+                  <a href="#">Служба “Комплаенс”</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <a href="#" class="footer__brand">
+            <img
+              class="footer__logo-img"
+              src="./images/footer-logo.svg"
+              alt="logo"
+            />
+            <p class="footer__logo-text">
+              Акционерное обшество Тепловые электро станции
+            </p>
+          </a>
+          <div class="footer__bottom-right">
+            <ul class="social">
+              <li class="social__item">
+                <a href="#">
+                  <img src="./images/social/twitter.svg" alt="Twitter icon" />
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <img src=./images/social/facebook.svg alt="Facebook icon" />
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <img
+                    src="./images/social/instagram.svg"
+                    alt="Instagram icon"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <img src="./images/social/telegram.svg" alt="Telegram icon" />
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="oks-brand">
+              <img
+                src="./images/oks-logo.png"
+                alt="oks logo image"
+                class="oks-logo-image"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

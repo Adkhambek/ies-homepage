@@ -1,0 +1,70 @@
+.indicator {
+  margin-top: 38px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__item {
+    width: calc((100% - 20px) / 2);
+    @include responsive(sm-tablet) {
+      width: 100%;
+    }
+    background-color: $white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include responsive(sm-mobile) {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  }
+
+  &__top-text {
+    color: #1b2046;
+    font-size: 14px;
+    line-height: 40px;
+    margin-bottom: 33px;
+
+    @include responsive(sm-mobile) {
+      margin: 20px 0;
+    }
+  }
+
+  &__stat {
+    color: #5f6ac0;
+    font-size: 50px;
+    @include responsive(tablet) {
+      font-size: 35px;
+    }
+    @include responsive(sm-mobile) {
+      font-size: 24px;
+    }
+    font-weight: 800;
+    line-height: 40px;
+    margin-bottom: 13px;
+
+    span {
+      font-size: 16px;
+      font-weight: 800;
+    }
+  }
+
+  &__detail {
+    color: #171849;
+    font-size: 18px;
+    @include responsive(tablet) {
+      font-size: 16px;
+    }
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+  }
+}

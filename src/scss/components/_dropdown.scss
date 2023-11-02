@@ -1,0 +1,49 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  &__btn {
+    @include flex;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16;
+    padding: 5px;
+
+    @include responsive(tablet) {
+      gap: 5px;
+    }
+  }
+  &__menu {
+    z-index: 1000;
+    display: none;
+    background-color: $white;
+    position: absolute;
+    box-shadow: 20px 40px 64px 0 rgba(0, 0, 0, 0.24);
+    &--navbar {
+      min-width: 300px;
+      padding: 30px;
+      @include responsive(tablet) {
+        min-width: auto;
+        padding: 10px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-item {
+      position: relative;
+      padding: 5px 20px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      &--hover:hover {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+
+    .nested {
+      left: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.feature {
+  padding-top: 37px;
+  background-color: $white;
+  &__list {
+    @include flex(flex-start, space-between);
+    text-align: center;
+    @include responsive(tablet) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 19px;
+    }
+  }
+
+  &__item {
+    background-color: #d9dde4;
+    width: calc((100% - 5 * 19px) / 6);
+    @include responsive(tablet) {
+      width: calc((100% - 3 * 19px) / 4);
+    }
+    @include responsive(mobile) {
+      width: calc((100% - 19px) / 2);
+    }
+    @include responsive(sm-mobile) {
+      width: 100%;
+    }
+    height: 200px;
+    @include flex(center, center);
+    flex-direction: column;
+    padding: 10px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+      box-shadow: 10px 14px 124px 0px rgba(24, 80, 164, 0.17);
+    }
+  }
+
+  &__name {
+    color: #1e297d;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    margin-top: 20px;
+  }
+}
